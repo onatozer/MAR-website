@@ -117,6 +117,15 @@ body {
   font-size: 0;
 }
 
+.results-carousel img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 400px; /* all images stay within this height */
+  object-fit: contain;
+}
+
+
 .results-carousel video {
   margin: 0;
 }
