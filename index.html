@@ -75,21 +75,27 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Research Project Page</h1>
+            <h1 class="title is-1 publication-title">MAR: Multi-Agent Reflexion Improves Reasoning Abilities in LLMs</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <a href="https://www.linkedin.com/in/onat-ozer-299012328/" target="_blank">Onat Ozer</a><sup>1</sup>,</span>
+              <span class="author-block">
+              Grace Wu<sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/yuchen-daniel-wang/" target="_blank">Yuchen Wang</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/daniel-dosti/" target="_blank">Daniel Dosti</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/honghaozhang1/" target="_blank">Honghao Zhang</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/victoriaumich/" target="_blank">Vivi De La Rue</a><sup>1</sup> </span>
+              </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="author-block">{ozeronat, gracejwu, wangyuch, ddosti, honghaoz, vdelarue}@umich.edu</span> -->
+                    <span class="author-block">Machine Learning Research FA 25 </span>
+                    <span class="eql-cntrb"><small><br><sup>1</sup>University of Michigan</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -146,29 +152,13 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <!-- <h2 class="title is-3">Abstract</h2> -->
         <div class="content has-text-justified">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
@@ -180,40 +170,39 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/assets/images/reflexion3.png" alt="Figure 1"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+         As we can see, the MAR framework both outperforms the reflexion framework as well as the baseline gpt3.5 on question answering (HotPotQA) and programming (HumanEval).
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/assets/images/reflexion4.png" alt="Figure 2"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        MAR reflexion leads to consistent improvements in HotPotQA question-aswering, eventually outperforming the original Reflexion framework.
       </h2>
     </div>
+    <div class="item">
+        <!-- Your image here -->
+        <img src="static/assets/images/reflexion1.png" alt="Figure 3"/>
+        <h2 class="subtitle has-text-centered">
+          Pictured above is the original reflexion framework, where an agent acts within the environment, reflects on its mistakes, and adds these reflections to its memory buffer.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/assets/images/reflexion2.png" alt="figure 4"/>
+        <h2 class="subtitle has-text-centered">
+          Pictured above is our enhanced MAR framework, where a multi-agent debate is initiated to generate the reflection, rather than having a single LM do it. 
+        </h2>
+      </div>
   </div>
 </div>
 </div>
@@ -221,127 +210,13 @@
 <!-- End image carousel -->
 
 
-<!-- Embedded Google Slides -->
-<section class="google-slides-section">
-  <div class="google-slides-container">
-    <h2 class="title is-2 has-text-centered mb-6">Google Slides</h2>
-    <div class="responsive-iframe-container">
-      <iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vSxPBfuH2Ydrc3Y1y7YTjGar-IQ-RG6HoTHbQs3sAboDD5tp-aL66-AESeK35P7JmvKJx9GEAgHIvsu/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </div>
-  </div>
-</section>
-<!-- End embedded Google Slides -->
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-<!-- Math -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Math</h2>
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        Example inline math \( \int_0^1 x dx \) and block math:
-        \[
-        \hat{f}(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i x \xi} dx
-        \]
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End math -->
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-<!-- Code Cell with syntax highlighting + copy to clipboard -->
-<section class="section" id="Code">
-  <div class="container is-max-desktop content">
-    <h2 class="title">Example Code</h2>
-    <div class="code-container">
-      <pre><code class="code-content language-python">import numpy as np
-
-VAR = 42
-
-# Function to add a number to an array
-def foo(a):
-  a = np.array(a)
-  return a + VAR
-</code></pre>
-      <button class="copy-button" aria-label="Copy to clipboard">
-        <svg class="copy-icon" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
-        </svg>
-        <svg class="checkmark-icon" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
-        </svg>
-      </button>
-      <div class="copy-tooltip">Copy to clipboard</div>
-    </div>
-  </div>
-</section>
-<!-- End code cell -->
-
-
-
-
-
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">MLRE Conference Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="/static/assets/MARPoster.pdf" width="100%" height="1050">
           </iframe>
         
       </div>
@@ -349,6 +224,17 @@ def foo(a):
   </section>
 <!--End paper poster -->
 
+
+<!-- Embedded Google Slides -->
+<section class="google-slides-section">
+  <div class="google-slides-container">
+    <h2 class="title is-2 has-text-centered mb-6">Lightning Talk Presentation</h2>
+    <div class="responsive-iframe-container">
+      <iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vRhWQSfhMRslyUOFjkwcwlwa1F9xXIvp946tsAFGLFcgLFLlmWPEg-D_VA4JBMVYvRMlv8Fr8baywCc/embed?start=false&loop=false&delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+  </div>
+</section>
+<!-- End embedded Google Slides -->
 
 <!-- BibText citation + copy to clipboard -->
 <section class="section" id="Code">
